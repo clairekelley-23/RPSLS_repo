@@ -9,3 +9,5 @@ class Game:
     
     def game_rules(self):
         print.self.game_rules = "Scissors cut paper\nPaper covers Rock\nRock crushes Lizard\nLizard poisons Spock\nSpock smashes scissors\nScissors decapitates Lizard\nLizard eats paper\nPaper disproves Spock\nSpock vaporizes Rock\nRock Crushes scissors"
+
+    
