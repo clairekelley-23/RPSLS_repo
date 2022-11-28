@@ -5,9 +5,9 @@ class Game:
         pass
 
     def display_welcome(self):
-        self.display_welcome = "Welcome to Rock Paper Scissors Lizard Spock. First player to win two agames is the WINNER!"
+        self.display_welcome = "Welcome to Rock Paper Scissors Lizard Spock!"
     
     def game_rules(self):
-        print.self.game_rules = "Scissors cut paper\nPaper covers Rock\nRock crushes Lizard\nLizard poisons Spock\nSpock smashes scissors\nScissors decapitates Lizard\nLizard eats paper\nPaper disproves Spock\nSpock vaporizes Rock\nRock Crushes scissors"
+        print.self.game_rules = "Each game is the best of three\nUse the number keys to make a selection\n\nScissors cut paper\nPaper covers Rock\nRock crushes Lizard\nLizard poisons Spock\nSpock smashes scissors\nScissors decapitates Lizard\nLizard eats paper\nPaper disproves Spock\nSpock vaporizes Rock\nRock Crushes scissors"
 
     
