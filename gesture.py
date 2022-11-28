@@ -12,19 +12,19 @@ class Gestures:
             user_input = input(f"{self.gesture_options} 'Choose your gesture. '")
         
             if user_input == '0':
-                print('f{players} chose Rock')
+                print(f'{Gestures} chose Rock')
             elif user_input == '1':
-                print('f{} chose Paper')
+                print(f'{} chose Paper')
                 break
             elif user_input == '2':
-                print('f{} chose Scissors')
+                print(f'{} chose Scissors')
                 break
             elif user_input == '3':
-                print('f{} chose Lizard')
+                print(f'{} chose Lizard')
                 break
             elif user_input == '4':
-                print('f{} chose Spock')
+                print(f'{} chose Spock')
                 break
             else:
-                print('Type a number 0-4, {self.display_gestures}')
+                print('Type a number 0-4, {self.gesture_options}')
                 continue
