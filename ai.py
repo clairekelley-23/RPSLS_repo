@@ -1,8 +1,19 @@
+import random
 from player import Players
 
-class AI:
 
-    def __init__(self, Players):
-        self.
+class AI (Players):
 
-    def ai_vs_human(self):
+    def __init__(self):
+        self.player_three = 'AI'
+        super().__init__()
+
+    def generate_choice(self):
+        self.assign_gesture
+        super().__init__(self.generate_choice)
+        
+    
+
+
+
+        

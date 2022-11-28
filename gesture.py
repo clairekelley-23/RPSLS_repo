@@ -9,10 +9,10 @@ class Gestures:
         self.user_input = ''
         
         while True:
-            user_input = input(f"{self.gesture_options} 'Choose your gesture. '")
+            user_input = input(f"{self.gesture_options} Choose your gesture.\n")
         
             if user_input == '0':
-                print(f'{Gestures} chose Rock')
+                print(f'{} chose Rock')
             elif user_input == '1':
                 print(f'{} chose Paper')
                 break
@@ -26,5 +26,5 @@ class Gestures:
                 print(f'{} chose Spock')
                 break
             else:
-                print('Type a number 0-4, {self.gesture_options}')
+                print('Type a number 0-4', self.gesture_options)
                 continue
