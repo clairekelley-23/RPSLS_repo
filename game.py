@@ -2,10 +2,10 @@ import random
 from ai import AI
 from human import Humans
 
-class Game(AI, Humans):
-
+class Game():
     def __init__(self):
-        super.__init__()
+        self.player_one = Humans()
+        self.player_two = None
 
     def display_welcome(self):
         self.display_welcome = "Welcome to Rock Paper Scissors Lizard Spock!"
@@ -20,20 +20,19 @@ class Game(AI, Humans):
         
     
     def player_choice(self):
-        print("How many players? 1 or 2\n")
-        self.user_input = " "
+            print("How many players? 1 or 2\n")
+            self.user_input = " "
 
-        while True:
-            if self.user_input == '1':
-                print(self.player_one, "vs", self.player_three)
-                print(f'{self.player_one}\n{self.gesture_options}\n{self.assign_gesture}')
-                print(f'{self.player_three}\n{self.gesture_options}\n{random.choice(self.assign_gesture)}')   
-            elif self.user_input == '2':
-                print(self.player_one, "vs", self.player_two)
-                print(f'{self.player_one}\n{self.gesture_options}\n{self.assign_gesture}')
-                print(f'{self.player_two}\n{self.gesture_options}\n{self.assign_gesture}')
-            else:
-                continue
+            while True:
+                if self.user_input == '1':
+                    self.player_two = AI()
+                    # self.player_one.chose_gesture()
+                    # self.player_one.chosen_gesture
+                    # self.player_two.chose_gesture()
+                elif self.user_input == '2':
+                    self.player_two = Humans()
+                else:
+                    continue
     
     def assign_gesture(self):        
         self = '' 
@@ -59,5 +58,59 @@ class Game(AI, Humans):
                 print('Type a number 0-4', self.gesture_options)
                 continue
         
+print(f"AI: {AI_option}")
+print(f"{player_one} option: {player_option}")
+
+NumberOfRounds += 1
 
 
+if player_one_gesture==player_two_gesture
+    print('Tie, next round')
+    continue
+elif player_two==0 and Player_one==3:
+    print('Rock crushes Lizard')
+    print(f'{player.name()} wins')
+    continue
+elif player_two==0 and player_one==2:
+    print('Rock crushes scissors!')
+    print(f'{player.name()} wins')
+    continue
+elif player_two==1 and player_one==0:
+    print('Paper covers rock')
+    print(f'{player.name()} wins')
+    continue
+elif player_two==1 and player_one==4
+    print('Paper disproves Spock')
+    print(f'{player.name()} wins')
+    continue
+elif player_two==2 and player_one==1:
+    print('Scissors cut paper')
+    print(f'{player.name()} wins')
+    continue
+elif player_two==2 and player_one==3:
+    print('Scissors decapitates Lizard')
+    print(f'{player.name()} wins')
+    continue
+elif player_two==3 and player__one==1:
+    print('Lizard eats paper')
+    print(f'{player.name()} wins')
+    continue
+elif player_two==3 and player_one==4:
+    print('Lizard poisons Spock')
+    print(f'{player.name()} wins')
+    continue
+elif player_two==4 and player_one==0:
+    print('Spock vaporizes rock')
+    print(f'{player.name()} wins')
+    continue
+elif player_two==4 and player_one==2:
+    print('Spock smashes scissors')
+    print(f'{player.name()} wins')
+    continue
+else:
+    print('Choose a valid option to play this game!')
+
+
+gameOn=True
+
+while gameOn:

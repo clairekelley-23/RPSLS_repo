@@ -4,10 +4,12 @@ class Players:
 
     def __init__(self, name, gesture):
         self.name = name
-        self.gesture= self.gesture_options
+        self.gesture= ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock']
+        self.chosen_gesture = ''
+    
 
     def gesture_options(self):
-        print(f'Choice 0: Rock', 'Choice 1: Paper', 'Choice 2: Scissors', 'Choice 3: Lizard', 'Choice 4: Spock')
+        self.gesture_options = ['Choice 0: Rock, Choice 1: Paper, Choice 2: Scissors, Choice 3: Lizard, Choice 4: Spock']
         self.user_input = '' 
 
         while True:
@@ -32,4 +34,8 @@ class Players:
                 continue
 
 
+
+player_one_score=0
+player_two_score=0
+NumberofRounds=0
  

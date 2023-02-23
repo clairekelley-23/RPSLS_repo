@@ -12,4 +12,12 @@ class AI (Players):
         self.player_choice
         self.assign_gesture
         super().__init__(self.generate_choice)
+
+    def chosen_gesture(self):
+        gameOn=True
+        while gameOn:
+            self.chosen_gesture = random.choice(self.generate_choice)
+        pass
         
+
+

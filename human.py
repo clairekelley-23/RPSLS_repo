@@ -3,17 +3,22 @@ from player import Players
 
 class Humans (Players):
 
-    def __init__(self, name):
-        super().__init__(name)
+    def __init__(self, name, gesture):
+        super().__init__(name, gesture)
     
 
-    def __init__(self, name):
-        super().__init__(self.name)
-        self.name = 'Player one',
-        self.name = 'Player two'  
+    def player_one(self, gesture):
+        super().__init__(name, gesture)
+        self.name= 'Player One'
+        self.gesture= input(gesture)
 
-    def gesture_options(self):
-        self.gesture_options = ['Choice 0: Rock', 'Choice 1: Paper', 'Choice 2: Scissors', 'Choice 3: Lizard', 'Choice 4: Spock']
+    # def __init__(self, name):
+    #     super().__init__(self, name)
+    #     self.name = 'Player one'
+    #     self.name = 'Player two' 
+
+    def chosen_gesture(self):
+        pass
        
         
 
