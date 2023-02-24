@@ -61,6 +61,11 @@ class Game():
 print(f"AI: {AI_option}")
 print(f"{player_one} option: {player_option}")
 
+
+
+while NumberofRounds<3:
+    //something about the players and choices here..//
+    
 NumberOfRounds += 1
 
 
@@ -104,6 +109,46 @@ elif player_two==4 and player_one==0:
     print(f'{player.name()} wins')
     continue
 elif player_two==4 and player_one==2:
+    print('Spock smashes scissors')
+    print(f'{player.name()} wins')
+    continue
+elif player_one==0 and Player_two==3:
+    print('Rock crushes Lizard')
+    print(f'{player.name()} wins')
+    continue
+elif player_one==0 and player_two==2:
+    print('Rock crushes scissors!')
+    print(f'{player.name()} wins')
+    continue
+elif player_one==1 and player_two==0:
+    print('Paper covers rock')
+    print(f'{player.name()} wins')
+    continue
+elif player_one==1 and player_two==4
+    print('Paper disproves Spock')
+    print(f'{player.name()} wins')
+    continue
+elif player_one==2 and player_two==1:
+    print('Scissors cut paper')
+    print(f'{player.name()} wins')
+    continue
+elif player_one==2 and player_two==3:
+    print('Scissors decapitates Lizard')
+    print(f'{player.name()} wins')
+    continue
+elif player_one==3 and player__two==1:
+    print('Lizard eats paper')
+    print(f'{player.name()} wins')
+    continue
+elif player_one==3 and player_two==4:
+    print('Lizard poisons Spock')
+    print(f'{player.name()} wins')
+    continue
+elif player_one==4 and player_two==0:
+    print('Spock vaporizes rock')
+    print(f'{player.name()} wins')
+    continue
+elif player_one==4 and player_two==2:
     print('Spock smashes scissors')
     print(f'{player.name()} wins')
     continue
