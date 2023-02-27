@@ -16,23 +16,30 @@ class Game():
     def game_play(self):
         print(self.display_welcome)
         print(self.game_rules)
-        print(self.player_choice, self.assign_gesture)
+        print(self.player_choice)
+        #present gesture options
+        #player or players choose gesture
+        #input from player one to compare to two 
+        #display winner
+        
         
     
     def player_choice(self):
-            print("How many players? 1 or 2\n")
-            self.user_input = " "
+        print("How many players? 1 or 2\n")
+        self.user_input = " "
 
-            while True:
-                if self.user_input == '1':
-                    self.player_two = AI()
-                    # self.player_one.chose_gesture()
-                    # self.player_one.chosen_gesture
-                    # self.player_two.chose_gesture()
-                elif self.user_input == '2':
-                    self.player_two = Humans()
-                else:
-                    continue
+        while True:
+            if self.user_input == '1':
+                self.player_two = AI()
+                self.player_one = Humans.player_one()
+            elif self.user_input == '2':
+                self.player_two = Humans.player_two()
+                self.player_one = Humans.player_one()
+            else:
+                continue
+
+    def game_one():
+
     
     def assign_gesture(self):        
         self = '' 
@@ -58,102 +65,108 @@ class Game():
                 print('Type a number 0-4', self.gesture_options)
                 continue
         
-print(f"AI: {AI_option}")
-print(f"{player_one} option: {player_option}")
+# print(f"AI: {AI_option}")
+# print(f"{player_one} option: {player_option}")
 
+# NumbersofRounds=0
 
-
-while NumberofRounds<3:
-    //something about the players and choices here..//
+    def play_round(self):
+        self.number_of_rounds=0
+        while self.number_of_rounds<3:
+            number_of_rounds+=1
     
-NumberOfRounds += 1
+    def one_round(self)
 
 
-if player_one_gesture==player_two_gesture
-    print('Tie, next round')
-    continue
-elif player_two==0 and Player_one==3:
-    print('Rock crushes Lizard')
-    print(f'{player.name()} wins')
-    continue
-elif player_two==0 and player_one==2:
-    print('Rock crushes scissors!')
-    print(f'{player.name()} wins')
-    continue
-elif player_two==1 and player_one==0:
-    print('Paper covers rock')
-    print(f'{player.name()} wins')
-    continue
-elif player_two==1 and player_one==4
-    print('Paper disproves Spock')
-    print(f'{player.name()} wins')
-    continue
-elif player_two==2 and player_one==1:
-    print('Scissors cut paper')
-    print(f'{player.name()} wins')
-    continue
-elif player_two==2 and player_one==3:
-    print('Scissors decapitates Lizard')
-    print(f'{player.name()} wins')
-    continue
-elif player_two==3 and player__one==1:
-    print('Lizard eats paper')
-    print(f'{player.name()} wins')
-    continue
-elif player_two==3 and player_one==4:
-    print('Lizard poisons Spock')
-    print(f'{player.name()} wins')
-    continue
-elif player_two==4 and player_one==0:
-    print('Spock vaporizes rock')
-    print(f'{player.name()} wins')
-    continue
-elif player_two==4 and player_one==2:
-    print('Spock smashes scissors')
-    print(f'{player.name()} wins')
-    continue
-elif player_one==0 and Player_two==3:
-    print('Rock crushes Lizard')
-    print(f'{player.name()} wins')
-    continue
-elif player_one==0 and player_two==2:
-    print('Rock crushes scissors!')
-    print(f'{player.name()} wins')
-    continue
-elif player_one==1 and player_two==0:
-    print('Paper covers rock')
-    print(f'{player.name()} wins')
-    continue
-elif player_one==1 and player_two==4
-    print('Paper disproves Spock')
-    print(f'{player.name()} wins')
-    continue
-elif player_one==2 and player_two==1:
-    print('Scissors cut paper')
-    print(f'{player.name()} wins')
-    continue
-elif player_one==2 and player_two==3:
-    print('Scissors decapitates Lizard')
-    print(f'{player.name()} wins')
-    continue
-elif player_one==3 and player__two==1:
-    print('Lizard eats paper')
-    print(f'{player.name()} wins')
-    continue
-elif player_one==3 and player_two==4:
-    print('Lizard poisons Spock')
-    print(f'{player.name()} wins')
-    continue
-elif player_one==4 and player_two==0:
-    print('Spock vaporizes rock')
-    print(f'{player.name()} wins')
-    continue
-elif player_one==4 and player_two==2:
-    print('Spock smashes scissors')
-    print(f'{player.name()} wins')
-    continue
-else:
-    print('Choose a valid option to play this game!')
+           
+    
+
+    def game_input(self):
+        if self.player_one_gesture==self.player_two_gesture
+            print('Tie, next round')
+            continue
+        elif player_two==0 and Player_one==3:
+            print('Rock crushes Lizard')
+            print(f'{player.name()} wins')
+            continue
+        elif player_two==0 and player_one==2:
+            print('Rock crushes scissors!')
+            print(f'{player.name()} wins')
+            continue
+        elif player_two==1 and player_one==0:
+            print('Paper covers rock')
+            print(f'{player.name()} wins')
+            continue
+        elif player_two==1 and player_one==4
+            print('Paper disproves Spock')
+            print(f'{player.name()} wins')
+            continue
+        elif player_two==2 and player_one==1:
+            print('Scissors cut paper')
+            print(f'{player.name()} wins')
+            continue
+        elif player_two==2 and player_one==3:
+            print('Scissors decapitates Lizard')
+            print(f'{player.name()} wins')
+            continue
+        elif player_two==3 and player__one==1:
+            print('Lizard eats paper')
+            print(f'{player.name()} wins')
+            continue
+        elif player_two==3 and player_one==4:
+            print('Lizard poisons Spock')
+            print(f'{player.name()} wins')
+            continue
+        elif player_two==4 and player_one==0:
+            print('Spock vaporizes rock')
+            print(f'{player.name()} wins')
+            continue
+        elif player_two==4 and player_one==2:
+            print('Spock smashes scissors')
+            print(f'{player.name()} wins')
+            continue
+        elif player_one==0 and Player_two==3:
+            print('Rock crushes Lizard')
+            print(f'{player.name()} wins')
+            continue
+        elif player_one==0 and player_two==2:
+            print('Rock crushes scissors!')
+            print(f'{player.name()} wins')
+            continue
+        elif player_one==1 and player_two==0:
+            print('Paper covers rock')
+            print(f'{player.name()} wins')
+            continue
+        elif player_one==1 and player_two==4
+            print('Paper disproves Spock')
+            print(f'{player.name()} wins')
+            continue
+        elif player_one==2 and player_two==1:
+            print('Scissors cut paper')
+            print(f'{player.name()} wins')
+            continue
+        elif player_one==2 and player_two==3:
+            print('Scissors decapitates Lizard')
+            print(f'{player.name()} wins')
+            continue
+        elif player_one==3 and player__two==1:
+            print('Lizard eats paper')
+            print(f'{player.name()} wins')
+            continue
+        elif player_one==3 and player_two==4:
+            print('Lizard poisons Spock')
+            print(f'{player.name()} wins')
+            continue
+        elif player_one==4 and player_two==0:
+            print('Spock vaporizes rock')
+            print(f'{player.name()} wins')
+            continue
+        elif player_one==4 and player_two==2:
+            print('Spock smashes scissors')
+            print(f'{player.name()} wins')
+            continue
+        else:
+            print('Choose a valid option to play this game!')
 
 
 gameOn=True
