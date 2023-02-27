@@ -3,11 +3,25 @@ from player import Players
 
 class Humans (Players):
 
-    def player_one(self, name):
+    def player_one(self):
         super().__init__()
         self.name= 'Player One'
         self.gesture= gesture_options()
+        self.score=0
+        while self.score<3:
+            print(gesture_options)
+        if self.score==3:
+            print("Player One Wins the Game!")
 
+    def player_two(self):
+        super().__init__()
+        self.name='Player Two'
+        self.gesture= gesture_options()
+        while self.score<3:
+            print(gesture_options)
+        if self.score==3:
+            print("Player Two Wins the Game!")
+    
        
 def gesture_options(self):
         self.gesture_options = ['Choice 0: Rock, Choice 1: Paper, Choice 2: Scissors, Choice 3: Lizard, Choice 4: Spock']
@@ -36,6 +50,4 @@ def gesture_options(self):
 
         
 
-Player_one = Humans('Player One', Players.gesture_options)
-Player_two = Humans('Player Two', Players.gesture_options)
 
