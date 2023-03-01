@@ -7,20 +7,23 @@ class Humans (Players):
         super().__init__()
         self.name= 'Player One'
         self.gesture= gesture_options()
-        self.score=0
-        while self.score<3:
+        print(gesture_options)
+        while self.score<2:
             print(gesture_options)
-        if self.score==3:
+        if self.score==2:
             print("Player One Wins the Game!")
+        return self.player_one
 
     def player_two(self):
         super().__init__()
         self.name='Player Two'
         self.gesture= gesture_options()
-        while self.score<3:
+        print(gesture_options)
+        while self.score<2:
             print(gesture_options)
-        if self.score==3:
+        if self.score==2:
             print("Player Two Wins the Game!")
+        return self.player_two
     
        
 def gesture_options(self):
