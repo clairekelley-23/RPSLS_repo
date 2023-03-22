@@ -4,21 +4,11 @@ from player import Players
 
 class AI (Players):
 
-    def __init__(self):
-        super().__init__()
-        self.player_two = 'AI'
-        while self.score<2:
-            print(self.gesture)
-            self.chosen_gesture()
-        if self.score==2:
-            print("AI Wins the Game!")
-        return self.player_two
-
-
-    def chosen_gesture(self):
-        self.chosen_gesture = random.choice(self.gesture)
-        return (self.chosen_gesture)
+    def get_gesture(self):
+        self.chosen_gesture = random.choice(options)
         
         
+gestures = {'0': 'Rock', '1': 'Paper', '2': 'Scissors', '3': 'Lizard', '4': 'Spock'}
+options = ['0', '1', '2', '3', '4']
 
 
